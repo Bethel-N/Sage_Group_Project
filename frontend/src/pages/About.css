@@ -1,0 +1,231 @@
+/* General Page Layout */
+.about-us {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+  animation: fadeIn 1s ease-out;
+  color: #333;
+}
+
+/* Page Title with Gradient */
+.about-us h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(45deg, #ff6f61, #ff9a8b, #d94c1e);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  animation: slideUp 1.5s ease-out forwards;
+}
+
+/* Intro Section */
+.about-us .intro {
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.about-us .intro p {
+  font-size: 20px;
+  color: #3f1e3f;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Our Story Section */
+.about-us .story {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 80px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.about-us .story .text {
+  flex: 1;
+  font-size: 20px;
+  color: #333;
+  line-height: 1.8;
+  font-weight: 500;
+  padding-right: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-us .story .image {
+  flex: 1;
+  max-width: 650px;
+  max-height: 720px; /* Set max height */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  padding-right: 80px;
+}
+
+.about-us .story img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-us .story img:hover {
+  transform: scale(1.1);
+}
+
+.about-us .story:hover .image {
+  transform: scale(1.05);
+}
+
+/* Mission Statement */
+/* Ensuring the parent container is centered */
+.about-us .mission {
+  background-color: #6374c6;
+  padding: 50px;
+  padding-left: 100px;
+  max-width: 900px;
+  color: white;
+  border-radius: 12px;
+  margin: 0 auto; /* Centers the container horizontally */
+  margin-bottom: 60px;
+  opacity: 0;
+  animation: fadeIn 2.5s ease-out forwards;
+
+  /* Flexbox to center content vertically and horizontally */
+  display: flex;
+  flex-direction: column; /* Ensures text is stacked vertically */
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  text-align: center; /* Centers the text */
+}
+
+.about-us .mission h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ffa500, #ff6347, #ff4500);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-us .mission p {
+  font-size: 22px;
+  text-align: center;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Contact Section */
+.about-us .contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 80px;
+  opacity: 0;
+  animation: fadeIn 3s ease-out forwards;
+}
+
+.about-us .contact div {
+  flex: 1;
+  max-width: 400px;
+}
+
+.about-us .contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.about-us .contact form:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.about-us .contact input,
+.about-us .contact textarea {
+  padding: 18px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  resize: vertical;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.about-us .contact input:focus,
+.about-us .contact textarea:focus {
+  border-color: #5e72e4;
+  outline: none;
+}
+
+.about-us .contact button {
+  padding: 15px;
+  font-size: 16px;
+  background-color: #5e72e4;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.about-us .contact button:hover {
+  background-color: #4a61c5;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+.about-us footer {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 60px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

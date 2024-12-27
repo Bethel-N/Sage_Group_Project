@@ -1,0 +1,92 @@
+/* Layout container for sidebar and content */
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar container */
+.admin-sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  height: 100vh;
+  transition: all 0.3s;
+  background-color: #2c3e50; /* Dark blue-gray color */
+  color: #ecf0f1; /* Light text */
+  position: fixed; /* Fix the sidebar */
+  top: 0;
+  left: 0;
+}
+
+/* Adjusted sidebar when closed */
+.admin-sidebar.closed {
+  min-width: 60px; /* Narrow sidebar width */
+}
+
+/* Sidebar header */
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid #34495e; /* Light divider */
+  background-color: #34495e; /* Slightly darker background */
+}
+
+/* Sidebar menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Sidebar menu items */
+.sidebar-menu li {
+  margin: 0;
+}
+
+.sidebar-menu a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #ecf0f1; /* Default link color */
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover and focus styles */
+.sidebar-menu a:hover,
+.sidebar-menu a:focus {
+  background-color: #16a085; /* Highlight on hover */
+  color: #ffffff; /* Ensure contrast */
+}
+
+/* Active link styles */
+.sidebar-menu a.active {
+  background-color: #1abc9c; /* Active link color */
+  color: #ffffff; /* Ensure text contrast */
+  font-weight: bold; /* Emphasize active link */
+  border-left: 4px solid #f39c12; /* Highlight active link with border */
+  padding-left: 16px; /* Adjust padding for border */
+}
+
+/* Logout item styles */
+.sidebar-menu li:last-child {
+  margin-top: auto; /* Push logout to the bottom */
+  border-top: 1px solid #34495e; /* Divider for logout */
+}
+
+/* Content area styles */
+.content-area {
+  margin-left: 250px; /* Make room for sidebar */
+  padding: 20px;
+  background-color: #f4f6f7; /* Light background for content */
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+}
+
+/* When sidebar is closed, adjust content area margin */
+.admin-sidebar.closed + .content-area {
+  margin-left: 60px; /* Narrowed margin when sidebar is closed */
+}

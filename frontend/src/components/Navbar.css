@@ -1,0 +1,74 @@
+/* Remove padding from the container */
+.container-fluid {
+  padding: 0 !important;
+}
+
+/* Navbar custom styles */
+.navbar {
+  background: linear-gradient(to right, #f9f1f7, #c53775); /* Dark background */
+  padding: 10px 20px;
+}
+
+/* Navbar Brand Styling */
+.navbar-brand {
+  padding-left: 15px;
+  color: #420b23; /* Change this color to your desired color */
+  font-size: 10rem; /* Adjust font size as needed */
+  font-weight: 900; /* Set to 900 for the maximum boldness */
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #a02e60; /* Hover color */
+}
+
+/* Optional: Change color for the icon */
+.navbar-brand i {
+  color: #420b23; /* Change icon color */
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover i {
+  color: #a02e60; /* Icon hover color */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #dddddd;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #5f4c57;
+}
+
+/* LogoutButton alignment fix if it contains only an icon */
+.navbar-nav .nav-item:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+.navbar-dark .navbar-toggler {
+  background-color: transparent;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,136 @@
+/* Container Styling */
+.admin-products-container {
+  padding: 30px 50px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #c53775;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Add Product Button */
+.add-product-btn {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: #4d323e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #a02e60;
+}
+
+/* No Products Message */
+.no-products-msg {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+/* Product List Styling */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 6px 12px rgba(137, 41, 41, 0.2);
+}
+
+/* Product Image Styling */
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Product Info Section */
+.product-info {
+  padding: 20px;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 1.5rem;
+  color: #c53775;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Product Price */
+.product-price {
+  font-size: 1.1rem;
+  color: #28a745;
+  margin-bottom: 5px;
+}
+
+/* Product Category */
+.product-category {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+/* Action Buttons Styling */
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-edit {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}

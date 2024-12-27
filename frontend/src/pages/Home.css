@@ -1,0 +1,511 @@
+/* Home.css */
+.home-container {
+  font-family: Arial, sans-serif;
+  height: 100;
+}
+
+/* Banner Section */
+.banner {
+  background-image: url("../assets/k6.jpg");
+  background-size: cover;
+  background-position: top center; /* Focus on the top part of the image */
+  color: white;
+  height: 100vh;
+  text-align: center;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Animation settings */
+  animation: moveBackground 20s linear infinite;
+}
+
+/* Define the keyframes for animating the background */
+@keyframes moveBackground {
+  0% {
+    background-position: top center; /* Starting position */
+  }
+  50% {
+    background-position: bottom center; /* Middle position */
+  }
+  100% {
+    background-position: top center; /* Ending position (back to top) */
+  }
+}
+
+.banner h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #f4f0f2; /* Light color for text */
+  text-transform: uppercase; /* Make text uppercase */
+  letter-spacing: 2px; /* Add space between letters */
+  font-family: "Arial", sans-serif; /* Use a clean, modern font */
+
+  /* Add text shadow to create a border-like effect */
+  text-shadow: 2px 2px 4px rgba(207, 199, 209, 0.6),
+    /* Shadow for dark border effect */ -2px -2px 4px rgba(156, 141, 154, 0.6),
+    /* Shadow for dark border effect */ 2px -2px 4px rgba(249, 242, 247, 0.6),
+    /* Shadow for dark border effect */ -2px 2px 4px rgba(177, 156, 170, 0.6); /* Shadow for dark border effect */
+
+  /* Optional additional text styles */
+  text-align: center; /* Ensure the text is centered */
+  line-height: 1.2; /* Adjust line height for better text appearance */
+  padding: 10px 20px; /* Add padding to give the text more breathing room */
+}
+
+.banner p {
+  font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+/* About Section */
+
+.about-section {
+  padding-left: 150px;
+  background: linear-gradient(
+    to right,
+    #f9f1f7,
+    #c53775
+  ); /* Gradient from light pink to deep pink */
+  color: white;
+}
+
+/* Card Styling */
+.about-card {
+  background-color: linear-gradient(to right, #f9f1f7, #c53775);
+  border-radius: 100%;
+  overflow: hidden;
+
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+  height: 300;
+  width: 70%;
+}
+
+/* Card Title */
+.card-title {
+  color: #401d2c;
+  font-size: 5cap;
+  font-weight: 990;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Card Text */
+.card-text {
+  color: #555;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Hover Effect */
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-card:hover .card-title {
+  color: #a02e60; /* Change color on hover */
+}
+
+.about-card:hover .card-text {
+  color: #666; /* Lighter text on hover */
+}
+
+/* Slider Section */
+.slider-container {
+  margin-top: 50px;
+}
+
+.slider-item {
+  padding: 0 10px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-footer {
+  background-color: #f8f9fa;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Product Grid Section */
+.container {
+  margin-top: 100px;
+}
+
+.text-primary {
+  color: #c53775 !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.btn {
+  background-color: #c53775;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #a02e60;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+/* General Page Styles */
+
+/* Contact Page Container */
+.contact-page {
+  width: 90%;
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+
+  /* Centering the container */
+  margin: auto; /* Automatically center horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Header Section */
+.contact-header {
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(135deg, rgb(203, 17, 95), #e9222c);
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}
+
+/* Contact Details Section */
+.contact-details-new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+}
+.container {
+  background: linear-gradient(to right, #f9f1f7, #c53775);
+}
+.contact-card {
+  flex: 1 1 calc(50% - 10px);
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: rgb(252, 37, 102);
+  margin-right: 15px;
+}
+
+.contact-info h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0 0;
+}
+
+/* Form Section */
+.contact-form {
+  padding: 20px 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.5);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1rem;
+  background: rgb(252, 37, 109);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s ease;
+}
+
+.send-btn:hover {
+  background: #1e60cc;
+  transform: translateY(-3px);
+}
+
+.response-message {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #2575fc;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation on hover */
+/* Centered heading with glow and fade-in effect */
+.category-heading {
+  padding: 40px;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #cc328c;
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+  animation: fadeIn 1s ease-in-out, glow 1.5s infinite alternate;
+  letter-spacing: 2px;
+}
+
+/* Glow effect */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #cc328c, 0 0 10px #cc328c, 0 0 15px #ff69b4;
+  }
+  100% {
+    text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+  }
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effect with bounce */
+.category-heading:hover {
+  animation: bounce 0.5s;
+  color: #ff69b4; /* Slightly lighter color */
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive font size */
+@media (max-width: 768px) {
+  .category-heading {
+    font-size: 2rem;
+  }
+}
+
+/* Styling for Category Title */
+
+/* Card hover effect */
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-10px); /* Slight raise on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Image Hover Effect */
+.category-card img {
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.05); /* Slight zoom effect on image */
+}
+/* ---------------------------------------------------------------- */
+/* Product Grid Container */
+.product-grid-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-grid-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Product Card */
+.product-card {
+  width: calc(25% - 20px); /* Adjust width based on the number of items */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card-inner {
+  border: 3px solid #ff9800;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card-inner:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Product Card Body */
+.product-card-body {
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+
+.product-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-card-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-card-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Product Card Footer */
+.product-card-footer {
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.buy-now-button {
+  background-color: #ff9800;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+  background-color: #fb8c00;
+}

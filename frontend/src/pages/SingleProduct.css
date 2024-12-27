@@ -1,0 +1,19 @@
+.size-guide-section {
+  margin-top: 20px;
+  text-align: center;
+}
+.size-guide-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.size-guide-table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+.size-guide-table th,
+.size-guide-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
